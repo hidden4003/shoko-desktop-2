@@ -1,0 +1,25 @@
+@import "~roboto-fontface/css/roboto/roboto-fontface.css";
+@import "~@openfonts/exo-2_latin/index.css";
+@import "./frame.css";
+@import "./bootstrap.global.css";
+@import "./bootstrap-extend.global.css";
+@import "./site.global.css";
+@import "./slidePanel.global.css";
+@import "./jquery-mmenu.global.css";
+@import "./web-icons.global.css";
+@import "~react-perfect-scrollbar/dist/css/styles.css";
+@import '~react-virtualized/styles.css';
+
+.site-navbar .navbar-header .navbar-brand-logo {
+  margin-top: 0;
+  height: 60px;
+}
+
+.site-menubar-fold.site-menubar-hover .site-navbar .navbar-brand-logo {
+  height: 60px;
+}
+
+.site-navbar-small .site-navbar .navbar-brand {
+  height: 60px;
+  padding: 0;
+}

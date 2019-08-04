@@ -1,0 +1,66 @@
+html, body {
+
+}
+.shoko-main-viewport {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  background: #FCC;
+  display: flex;
+  flex-direction: column;
+}
+
+.shoko-main-viewport > .top-navbar {
+  background: #0a0b1d;
+  border: 0;
+  color: #fff;
+  height: 50px;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.shoko-main-viewport > .main-content {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0;
+  max-height: 100%;
+  background: #6c7283;
+}
+
+.shoko-main-viewport  > .top-navbar > .shoko-logo {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.shoko-main-viewport  > .top-navbar > .shoko-logo > .left-part {
+  width: 0;
+  height: 0;
+  border-top: 50px solid #162850;
+  border-left: 36px solid transparent;
+  display: inline-block;
+}
+.shoko-main-viewport  > .top-navbar > .shoko-logo > .right-part {
+  width: 0;
+  height: 0;
+  border-top: 50px solid #162850;
+  border-right: 36px solid transparent;
+  display: inline-block;
+}
+
+.shoko-main-viewport  > .top-navbar > .shoko-logo > .text {
+  background: #162850;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.5em;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0 1.5em;
+  min-height: 50px;
+  line-height: 2em;
+}
