@@ -47,7 +47,7 @@ class Login extends Component<Props, State> {
     const { user, password, host } = api;
 
     return (
-      <div className="page-content">
+      <div className="page-login-v2 page-content">
         {image !== '' && <img alt="" className="login-bg" src={image} />}
         <div className="page-login-main animation-slide-right animation-duration-1">
           <div className="app-info">

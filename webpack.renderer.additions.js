@@ -1,6 +1,6 @@
-const path = require('path');
+const merge = require('webpack-merge');
 
-module.exports = {
+const shokoConfig = {
   module: {
     rules: [
       {
@@ -16,9 +16,6 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        issuer: {
-          test: /\.jsx?$/
-        },
         use: ['@svgr/webpack', 'url-loader']
       },
       {
@@ -35,4 +32,15 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+};
+
+
+
+module.exports = function(config) {
+  return merge.strategy(
+    {
+      entry: 'prepend',
+      'module.rules': 'prepend'
+    }
+  )(config, shokoConfig);
 };

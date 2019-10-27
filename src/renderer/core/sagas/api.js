@@ -93,7 +93,7 @@ function postLogin(apiState, data) {
 }
 
 function getRandomImage(apiState) {
-  return apiCall(apiState, '/image/7/random', '').catch(reason => ({
+  return apiCall(apiState, '/v2/image/7/random', '').catch(reason => ({
     error: true,
     message: typeof reason === 'string' ? reason : reason.message
   }));

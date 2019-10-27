@@ -12,6 +12,7 @@ function createMainWindow() {
     width: 1600,
     height: 900,
     frame: false,
+    webPreferences: { webSecurity: false }
   });
 
   if (isDevelopment) {
