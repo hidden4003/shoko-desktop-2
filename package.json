@@ -39,7 +39,7 @@
     "eslint-plugin-react": "^7.12.4",
     "history": "^4.9.0",
     "moment": "^2.24.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "prettysize": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
